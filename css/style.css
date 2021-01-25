@@ -1,0 +1,91 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#150804;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+div.line{
+    width: 100vw;
+    border-bottom: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mouse{
+    width: 200px;
+    height: 200px;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1cea1e1-851b-4b62-8a11-9dfeeaa79b37/d9ic1r6-81b289dc-cab9-480b-b6a4-80fab855bf68.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDFjZWExZTEtODUxYi00YjYyLThhMTEtOWRmZWVhYTc5YjM3XC9kOWljMXI2LTgxYjI4OWRjLWNhYjktNDgwYi1iNmE0LTgwZmFiODU1YmY2OC5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.bgVpyFYwRY8VB0kz1Y2ExAREI6Iw7h6DeZUyw3McjM4');
+    background-position: center;
+    background-size: cover;
+    animation-name: eat;
+    animation-duration: 15s;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #150804;
+}
+
+/* .cacciatore{ */
+    /* width: 100px;
+    height: 100px;    
+    background-image: url('https://i0.wp.com/metropolitanmagazine.it/wp-content/uploads/2020/06/looney-tunes-sam.gif');
+    background-position: center;
+    background-size: cover;
+    animation-name: run;
+    animation-duration: 15s;
+    position: absolute;
+} */
+
+@keyframes eat{
+    0%   {right:0px; bottom:0px;}
+    5%   {right: 60px; top: -100px;}
+    10%  {right: 150px; top: -300px;}
+    12%  {right: 200px; top: -70px;}
+    14%  {right: 300px; top: 80px;}
+    18%  {right: 800px; top: 50px;}
+    20%  {right: 100px; top: 100px;}
+    23%  {right: 200px; top: -200px;}
+    24%  {right: 300px; top: -100px;}
+    25%  {right: 500px; top:-30px;}
+    26%  {right: 100px; top: 500px;}
+    30%  {right: ; top: ;}
+    35%  {right: ; top: ;}
+    40%  {right: ; top: ;}
+    42%  {right: ; top: ;}
+    45%  {right: ; top: ;}
+    48%  {right: ; top: ;}
+    50%  {right:300px; top:200px;}
+    55%  {right: ; top: ;}
+    58%  {right: ; top: ;}
+    60%  {right: ; top: ;}
+    65%  {right: ; top: ;}
+    68%  {right: ; top: ;}
+    70%  {right: ; top: ;}
+    75%  {right:0px; top:200px;}
+    78%  {right: ; top: ;}
+    80%  {right: ; top: ;}
+    85%  {right: ; top: ;}
+    88%  {right: ; top: ;}
+    95%  {right: ; top: ;}
+    98%  {right: ; top: ;}
+   100%  {right:0px; top:0px;}
+}
+
+@keyframes run{
+    0%   {right:-10px; top:0px;}
+    25%  {right:450px; top:-30px;}
+    50%  {right:200px; top:200px;}
+    75%  {right:0px; top:200px;}
+    100%  {right:0px; top:0px;}
+}
