@@ -19,15 +19,36 @@ let move = new Vue({
     }
 })
 
+
+
 $(document).ready(function(){
+    document.getElementById('myBtn').addEventListener('click', function(){
+        const bottone = $('#myBtn');
+        bottone.addClass('none');
+        ('keydown', function(move){
+            //salvo il topo in nuna costante
+            const topo = $('.mouse')
+            // freccia sinistra = 37
+            if(move.which == 37){
+                topo.base -=1;
+            }
+            //freccia destra
+            else if(move.which == 39){
+                topo.base +=1;
+            }
+            else if(topo.which == 38){
+                topo.altezza +=1;
+            }
+            else if(topo.which == 40){
+                topo.altezza -= 1;
+            }
 
-    
+        });
+    });
 
 
-
+    const topo = $('.mouse');
 
 
 });
-
-
 

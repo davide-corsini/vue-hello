@@ -72,8 +72,8 @@ body{
 }
 
 .tubo4{
-        height: 130px;
-    width: 82%;
+    height: 130px;
+    width: 85%;
     background-color: yellowgreen;
     position: absolute;
     bottom: 340px;
@@ -121,7 +121,7 @@ body{
     width: 82%;
     background-color: yellowgreen;
     position: absolute;
-    top: 100px;
+    top: 150px;
     right: 100px;
     border: 2px solid black;
 }
@@ -151,9 +151,9 @@ body{
     transform: translate(-50%, -50%);
 } */
 
-/* .mouse{ */
-    width: 140px;
-    height: 140px;
+.mouse{
+    width: 120px;
+    height: 120px;
     background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1cea1e1-851b-4b62-8a11-9dfeeaa79b37/d9ic1r6-81b289dc-cab9-480b-b6a4-80fab855bf68.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDFjZWExZTEtODUxYi00YjYyLThhMTEtOWRmZWVhYTc5YjM3XC9kOWljMXI2LTgxYjI4OWRjLWNhYjktNDgwYi1iNmE0LTgwZmFiODU1YmY2OC5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.bgVpyFYwRY8VB0kz1Y2ExAREI6Iw7h6DeZUyw3McjM4');
     background-position: center;
     background-size: cover;
@@ -162,6 +162,7 @@ body{
     position: absolute;
     border-radius: 50%;
     border: 3px solid #150804;
+    z-index: 2;
 }
 
 /* .cacciatore{ */
@@ -175,39 +176,55 @@ body{
     position: absolute;
 } */
 
-/* @keyframes eat{ */
-    0%   {right:0px; bottom:0px;}
-    5%   {right: 60px; top: -100px;}
-    10%  {right: 150px; top: -300px;}
-    12%  {right: 200px; top: -70px;}
-    14%  {right: 300px; top: 80px;}
-    18%  {right: 800px; top: 50px;}
-    20%  {right: 100px; top: 100px;}
-    23%  {right: 200px; top: -200px;}
-    24%  {right: 300px; top: -100px;}
-    25%  {right: 500px; top:-30px;}
-    26%  {right: 100px; top: 500px;}
-    30%  {right: ; top: ;}
-    35%  {right: ; top: ;}
-    40%  {right: ; top: ;}
-    42%  {right: ; top: ;}
-    45%  {right: ; top: ;}
-    48%  {right: ; top: ;}
-    50%  {right:300px; top:200px;}
-    55%  {right: ; top: ;}
-    58%  {right: ; top: ;}
-    60%  {right: ; top: ;}
-    65%  {right: ; top: ;}
-    68%  {right: ; top: ;}
-    70%  {right: ; top: ;}
-    75%  {right:0px; top:200px;}
-    78%  {right: ; top: ;}
-    80%  {right: ; top: ;}
-    85%  {right: ; top: ;}
-    88%  {right: ; top: ;}
-    95%  {right: ; top: ;}
-    98%  {right: ; top: ;}
-   100%  {right:0px; top:0px;}
+
+
+
+   /* 0%   {right:0px; bottom:40px;}
+    5%   {right: 60px; bottom: 40px;}
+    10%  {right: 150px; bottom: 40px;}
+    12%  {right: 200px; bottom: 40px;}
+    14%  {right: 300px; bottom: 40px;}
+    18%  {right: 400px; bottom: 40px;}
+    20%  {right: 500px; bottom: 40px;}
+    23%  {right: 600px; bottom: 40px;}
+    25%  {left: 60px; bottom: 40px;}
+    28%  {left: 60px; bottom: 60px;}
+    30%  {left: 60px; bottom: 90px;}
+    35%  {left: 60px; bottom: 150px;}
+    40% {left: 60px; bottom: 150px;}
+    42% {left: 60px; bottom: 200px;}
+    44%  {left: 60px; bottom: 250px;}
+    48% {left: 60px; bottom: 300px;}
+    52% {left: 60px; bottom: 350px;}
+    55% {left: 200px; bottom: 350px;}
+    58% {left: 370px; bottom: 350px;}
+    62% {left: 480px; bottom: 350px;}
+    65% {left: 640px; bottom: 350px;}
+    68% {right: 100px; bottom: 350px;}
+    70% {right: 50px; bottom: 350px;}
+    75%  {right: 50px; bottom: 380px}
+    77% {right: 50px; bottom: 500px;}
+    79%  {right:50px; bottom:600px;}
+    82%  {right: 100px; bottom: 600px;}
+    85% {right: 150px; bottom: 600px;}
+    90%  {right: 300px; bottom: 600px;}
+    93%{right: 450px; bottom: 600px;}
+    95% {right: 550px; bottom: 600px;}
+    97%{right: 595px; bottom: 600px;}
+    98% {left: 100px; bottom: 600px;}
+    99% {left: 50px; bottom: 600px;}
+    100%{left: 10px; bottom: 600px;} */
+
+
+ @keyframes eat{ 
+ 0%{right: 10px; bottom: 40px;}
+ 20%{left: 60px; bottom: 40px;}
+ 40%{left: 60px; bottom: 350px;}
+ 60%{right: 60px; bottom: 350px;}
+ 80%{right: 60px; bottom: 600px;}
+ 90% {right: 500px; bottom: 600px;}
+ 95% {right: 800px; bottom: 600px;}
+ 100% {right: 1200px; bottom: 600px;}
 }
 
 @keyframes run{
@@ -216,4 +233,8 @@ body{
     50%  {right:200px; top:200px;}
     75%  {right:0px; top:200px;}
     100%  {right:0px; top:0px;}
+}
+
+.none{
+    display: none;
 }
