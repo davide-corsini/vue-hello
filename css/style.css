@@ -14,18 +14,146 @@ body{
     position: relative;
 }
 
-div.line{
+
+
+
+.container-animazione{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+}
+
+.tubo1{
+    height: 130px;
+    width: 92%;
+    background-color: yellowgreen;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    border: 2px solid black;
+    margin-bottom: 30px;
+}
+.circle{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    background-color: yellowgreen;
+    z-index: 1;
+
+}
+
+.tubo3{
+    height: 300px;
+    width: 130px;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    background-color: yellowgreen;
+
+}
+
+.circle2{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 300px;
+    left: 40px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    background-color: yellowgreen;
+    z-index: 1;
+}
+
+.tubo4{
+        height: 130px;
+    width: 82%;
+    background-color: yellowgreen;
+    position: absolute;
+    bottom: 340px;
+    right: 100px;
+    border: 2px solid black;
+}
+
+.circle4{
+        height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 300px;
+    right: 40px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    background-color: yellowgreen;
+    z-index: 1;
+}
+
+.tubo5{
+    height: 250px;
+    width: 130px;
+    position: absolute;
+    bottom: 360px;
+    right: 55px;
+    background-color: yellowgreen;
+}
+
+.circle5{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 550px;
+    right: 40px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    background-color: yellowgreen;
+    z-index: 1;
+}
+
+.tubo6{
+    height: 130px;
+    width: 82%;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    border: 2px solid black;
+}
+
+.arrivo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    background-image: url('https://thumbs.dreamstime.com/b/arrivo-bianco-e-nero-ondulato-bandierina-checkered-20165793.jpg');
+    background-position: center;
+    background-size: cover;
+}
+/* https://www.boorp.com/facebook_gifs_animate/gif_animate_per_facebook/gif_animate_facebook_fame/tom_lecca_il_coperchio.gif */
+
+
+
+
+
+/* div.line{
     width: 100vw;
     border-bottom: 1px solid black;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
-.mouse{
-    width: 200px;
-    height: 200px;
+/* .mouse{ */
+    width: 140px;
+    height: 140px;
     background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1cea1e1-851b-4b62-8a11-9dfeeaa79b37/d9ic1r6-81b289dc-cab9-480b-b6a4-80fab855bf68.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDFjZWExZTEtODUxYi00YjYyLThhMTEtOWRmZWVhYTc5YjM3XC9kOWljMXI2LTgxYjI4OWRjLWNhYjktNDgwYi1iNmE0LTgwZmFiODU1YmY2OC5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.bgVpyFYwRY8VB0kz1Y2ExAREI6Iw7h6DeZUyw3McjM4');
     background-position: center;
     background-size: cover;
@@ -47,7 +175,7 @@ div.line{
     position: absolute;
 } */
 
-@keyframes eat{
+/* @keyframes eat{ */
     0%   {right:0px; bottom:0px;}
     5%   {right: 60px; top: -100px;}
     10%  {right: 150px; top: -300px;}
