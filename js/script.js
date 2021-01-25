@@ -21,7 +21,7 @@ let move = new Vue({
 
 
 
-    let topo = document.querySelector('.mouse');
+    let topo = document.getElementById('topo');
     console.log(topo);
     const movimento = 10; //questo 10rappresenta i miei px
     console.log(movimento);
@@ -37,8 +37,9 @@ let move = new Vue({
 
 
     //qui gli dico che al click del bottone puoi muovere le frecce ma non va 
-   
+    
     window.addEventListener('keyup', (speed) => {
+        
         switch(speed.key){
             case 'ArrowLeft':
                 topo.style.left = parseInt(topo.style.left) - movimento + 'px';
