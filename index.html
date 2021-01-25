@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    
+    <div id="container">
+
+        <h1 style="color: green" v-if='message'>Hai cliccato sul bottone</h1>
+        <h3 v-else></h3>
+        <button @click='addText'>Clicca qui show something</button>
+        <img :src="src" alt="">
+        <button @click='addImg'>Click img open</button>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
