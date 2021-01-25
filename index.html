@@ -7,41 +7,51 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
 </head>
 <body>
     
-
-
-
-
-
-
     <div id="container">
-        <button id="mioBottone">Inzia game</button>
-
-        <h1 style="color: green" v-if='message'>Hai cliccato sul bottone</h1>
+        <button id="mioBottone">Inizia game</button>
+        <div v-if='quadrato' class="quadrato">
+            <div class="up">
+                <i class="fas fa-arrow-up"></i>
+            </div>
+            <div class="left">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="right">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="down">
+                <i class="fas fa-arrow-down"></i>
+            </div>
+        </div>
+        <h1 style="color: white" v-if='message'>Premi le frecce della tastiera per spostare Jerry</h1>
         <h3 v-else></h3>
-        <button @click='addText'>Clicca qui show something</button>
-        <img :src="src" alt="">
-        <button @click='addImg'>Click img open</button>
-                <div class="tubo1"></div>
-                <div class="circle"></div>
-                <div class="tubo3"></div>
-                <div class="circle2"></div>
-                <div class="tubo4"></div>
-                <div class="circle4"></div>
-                <div class="tubo5"></div>
-                <div class="circle5"></div>
-                <div class="tubo6"></div>
-                <div class="arrivo">
-                    
-                </div>
-                <div id='topo' class='mouse partenza'></div>
-                <div class="cacciatore"></div>
+        <button @click='addText'>Sei pronto a giocare?</button>
+        <img :src="src" :class="titolo" alt="">
+        <button @click='addImg'>Clicca qui appena sei arrivato al traguardo!</button>
+
+        <div class="container-game">
+            <div class="tubo1"></div>
+            <div class="circle"></div>
+            <div class="tubo3"></div>
+            <div class="circle2"></div>
+            <div class="tubo4"></div>
+            <div class="circle4"></div>
+            <div class="tubo5"></div>
+            <div class="circle5"></div>
+            <div class="tubo6"></div>
+            <div class="arrivo"></div>
+            <div id='topo' class='mouse partenza'></div>
+            <div id='caccia' class="cacciatore"></div>        
+        </div>
             
     </div>
 
-    
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -14,8 +14,14 @@ body{
     position: relative;
 }
 
-
-
+.prova{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 40px;
+}
 
 .container-animazione{
     position: relative;
@@ -34,28 +40,27 @@ body{
     border: 2px solid black;
     margin-bottom: 30px;
 }
+
 .circle{
     height: 180px;
     width: 180px;
     border-radius: 50%;
     position: absolute;
     bottom: 0px;
-    left: 50px;
+    left: 2%;
     border: 2px solid black;
     margin-bottom: 20px;
     background-color: yellowgreen;
     z-index: 1;
-
 }
 
 .tubo3{
     height: 300px;
     width: 130px;
     position: absolute;
-    bottom: 100px;
-    left: 50px;
+    bottom: 5%;
+    left: 3%;
     background-color: yellowgreen;
-
 }
 
 .circle2{
@@ -63,8 +68,8 @@ body{
     width: 180px;
     border-radius: 50%;
     position: absolute;
-    bottom: 300px;
-    left: 40px;
+    bottom: 25%;
+    left: 2%;
     border: 2px solid black;
     margin-bottom: 20px;
     background-color: yellowgreen;
@@ -73,21 +78,21 @@ body{
 
 .tubo4{
     height: 130px;
-    width: 85%;
+    width: 88%;
     background-color: yellowgreen;
     position: absolute;
-    bottom: 340px;
-    right: 100px;
+    bottom: 28%;
+    right: 7%;
     border: 2px solid black;
 }
 
 .circle4{
-        height: 180px;
+    height: 180px;
     width: 180px;
     border-radius: 50%;
     position: absolute;
-    bottom: 300px;
-    right: 40px;
+    bottom: 25%;
+    right: 1%;
     border: 2px solid black;
     margin-bottom: 20px;
     background-color: yellowgreen;
@@ -95,11 +100,11 @@ body{
 }
 
 .tubo5{
-    height: 250px;
+    height: 600px;
     width: 130px;
     position: absolute;
-    bottom: 360px;
-    right: 55px;
+    bottom: 28%;
+    right: 2%;
     background-color: yellowgreen;
 }
 
@@ -108,8 +113,8 @@ body{
     width: 180px;
     border-radius: 50%;
     position: absolute;
-    bottom: 550px;
-    right: 40px;
+    top: 11%;
+    right: 1%;
     border: 2px solid black;
     margin-bottom: 20px;
     background-color: yellowgreen;
@@ -121,35 +126,69 @@ body{
     width: 82%;
     background-color: yellowgreen;
     position: absolute;
-    top: 150px;
-    right: 100px;
+    top: 12%;
+    right: 3%;
     border: 2px solid black;
 }
 
-.arrivo{
-    width: 100px;
-    height: 100px;
+.up{
+    width: 40px;
+    height: 40px;
+    background:  linear(to top, rgb(228, 228, 130), rgba(255, 255, 255, 0.26));
+    border: 1px solid white;
     position: absolute;
-    top: 100px;
-    left: 10px;
-    background-image: url('https://thumbs.dreamstime.com/b/arrivo-bianco-e-nero-ondulato-bandierina-checkered-20165793.jpg');
-    background-position: center;
-    background-size: cover;
+    left: 50%;
+    transform: translateX(-50%);
 }
-/* https://www.boorp.com/facebook_gifs_animate/gif_animate_per_facebook/gif_animate_facebook_fame/tom_lecca_il_coperchio.gif */
 
+.down{
+    width: 40px;
+    height: 40px;
+    background:  linear(to top, rgb(228, 228, 130), rgba(255, 255, 255, 0.26));
+    border: 1px solid white;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+}
 
+.left{
+    width: 40px;
+    height: 40px;
+    background:  linear(to top, rgb(228, 228, 130), rgba(255, 255, 255, 0.26));
+    border: 1px solid white;
+    position: absolute;
+    right: 18%;
+    bottom: 8%;
+    transform: translateX(-50%);
+}
 
+.right{
+    width: 40px;
+    height: 40px;
+    background:  linear(to top, rgb(228, 228, 130), rgba(255, 255, 255, 0.26));
+    border: 1px solid white;
+    position: absolute;
+    left: 30%;
+    bottom: 8%;
+    transform: translateX(-50%);
+}
 
-
-/* div.line{
-    width: 100vw;
-    border-bottom: 1px solid black;
+h1{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-} */
+    font-size: 50px;
+}
+
+i{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .mouse{
     width: 120px;
@@ -157,83 +196,37 @@ body{
     background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1cea1e1-851b-4b62-8a11-9dfeeaa79b37/d9ic1r6-81b289dc-cab9-480b-b6a4-80fab855bf68.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDFjZWExZTEtODUxYi00YjYyLThhMTEtOWRmZWVhYTc5YjM3XC9kOWljMXI2LTgxYjI4OWRjLWNhYjktNDgwYi1iNmE0LTgwZmFiODU1YmY2OC5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.bgVpyFYwRY8VB0kz1Y2ExAREI6Iw7h6DeZUyw3McjM4');
     background-position: center;
     background-size: cover;
-    /* animation-name: eat;
-    animation-duration: 15s;
-    position: absolute; */
     border-radius: 50%;
     z-index: 2;
+    display: inline-block;
 }
 
-/* .cacciatore{ */
-    /* width: 100px;
-    height: 100px;    
+.cacciatore{
+    width: 120px;
+    height: 120px; 
+    border-radius: 50%;   
     background-image: url('https://i0.wp.com/metropolitanmagazine.it/wp-content/uploads/2020/06/looney-tunes-sam.gif');
     background-position: center;
     background-size: cover;
-    animation-name: run;
-    animation-duration: 15s;
     position: absolute;
-} */
-
-
-
-
-   /* 0%   {right:0px; bottom:40px;}
-    5%   {right: 60px; bottom: 40px;}
-    10%  {right: 150px; bottom: 40px;}
-    12%  {right: 200px; bottom: 40px;}
-    14%  {right: 300px; bottom: 40px;}
-    18%  {right: 400px; bottom: 40px;}
-    20%  {right: 500px; bottom: 40px;}
-    23%  {right: 600px; bottom: 40px;}
-    25%  {left: 60px; bottom: 40px;}
-    28%  {left: 60px; bottom: 60px;}
-    30%  {left: 60px; bottom: 90px;}
-    35%  {left: 60px; bottom: 150px;}
-    40% {left: 60px; bottom: 150px;}
-    42% {left: 60px; bottom: 200px;}
-    44%  {left: 60px; bottom: 250px;}
-    48% {left: 60px; bottom: 300px;}
-    52% {left: 60px; bottom: 350px;}
-    55% {left: 200px; bottom: 350px;}
-    58% {left: 370px; bottom: 350px;}
-    62% {left: 480px; bottom: 350px;}
-    65% {left: 640px; bottom: 350px;}
-    68% {right: 100px; bottom: 350px;}
-    70% {right: 50px; bottom: 350px;}
-    75%  {right: 50px; bottom: 380px}
-    77% {right: 50px; bottom: 500px;}
-    79%  {right:50px; bottom:600px;}
-    82%  {right: 100px; bottom: 600px;}
-    85% {right: 150px; bottom: 600px;}
-    90%  {right: 300px; bottom: 600px;}
-    93%{right: 450px; bottom: 600px;}
-    95% {right: 550px; bottom: 600px;}
-    97%{right: 595px; bottom: 600px;}
-    98% {left: 100px; bottom: 600px;}
-    99% {left: 50px; bottom: 600px;}
-    100%{left: 10px; bottom: 600px;} */
-
-/* 
- @keyframes eat{ 
- 0%{right: 10px; bottom: 40px;}
- 20%{left: 60px; bottom: 40px;}
- 40%{left: 60px; bottom: 350px;}
- 60%{right: 60px; bottom: 350px;}
- 80%{right: 60px; bottom: 600px;}
- 90% {right: 500px; bottom: 600px;}
- 95% {right: 800px; bottom: 600px;}
- 100% {right: 1200px; bottom: 600px;}
-}
-
-@keyframes run{
-    0%   {right:-10px; top:0px;}
-    25%  {right:450px; top:-30px;}
-    50%  {right:200px; top:200px;}
-    75%  {right:0px; top:200px;}
-    100%  {right:0px; top:0px;}
-} */
+    top: 150px;
+    left: 200px;
+} 
 
 .none{
     display: none;
+}
+
+.active{
+    display: inline-block;
+}
+
+.quadrato{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid white;
 }
