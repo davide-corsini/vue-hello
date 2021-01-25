@@ -157,9 +157,9 @@ body{
     background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1cea1e1-851b-4b62-8a11-9dfeeaa79b37/d9ic1r6-81b289dc-cab9-480b-b6a4-80fab855bf68.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDFjZWExZTEtODUxYi00YjYyLThhMTEtOWRmZWVhYTc5YjM3XC9kOWljMXI2LTgxYjI4OWRjLWNhYjktNDgwYi1iNmE0LTgwZmFiODU1YmY2OC5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.bgVpyFYwRY8VB0kz1Y2ExAREI6Iw7h6DeZUyw3McjM4');
     background-position: center;
     background-size: cover;
-    animation-name: eat;
+    /* animation-name: eat;
     animation-duration: 15s;
-    position: absolute;
+    position: absolute; */
     border-radius: 50%;
     border: 3px solid #150804;
     z-index: 2;
@@ -215,7 +215,7 @@ body{
     99% {left: 50px; bottom: 600px;}
     100%{left: 10px; bottom: 600px;} */
 
-
+/* 
  @keyframes eat{ 
  0%{right: 10px; bottom: 40px;}
  20%{left: 60px; bottom: 40px;}
@@ -233,7 +233,7 @@ body{
     50%  {right:200px; top:200px;}
     75%  {right:0px; top:200px;}
     100%  {right:0px; top:0px;}
-}
+} */
 
 .none{
     display: none;

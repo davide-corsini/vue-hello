@@ -19,36 +19,47 @@ let move = new Vue({
     }
 })
 
-
-
 $(document).ready(function(){
-    document.getElementById('myBtn').addEventListener('click', function(){
-        const bottone = $('#myBtn');
-        bottone.addClass('none');
-        ('keydown', function(move){
-            //salvo il topo in nuna costante
-            const topo = $('.mouse')
-            // freccia sinistra = 37
-            if(move.which == 37){
-                topo.base -=1;
-            }
-            //freccia destra
-            else if(move.which == 39){
-                topo.base +=1;
-            }
-            else if(topo.which == 38){
-                topo.altezza +=1;
-            }
-            else if(topo.which == 40){
-                topo.altezza -= 1;
-            }
 
-        });
+    let topo = document.querySelector('.mouse');
+    console.log(topo);
+    let movimento = 10; //questo 10rappresenta i miei px
+    
+    //fase di partenza
+    window.addEventListener('load', () => {
+        topo.style.position = 'absolute';
+        topo.style.right = 10;//qui é da dove parte il toporagno asse delle x
+        topo.style.bottom = 30;//qui stessa cosa ma in altezza sse delle y
     });
+    //qui gli dico che al click del bottone puoi muovere le frecce ma non va 
+    document.getElementById('mioBottone').click(function(){
+        const bottone = $('#mioBottone');
+        bottone.addClass('none');
+    addEventListener('keydown', (movimento) => {
+        switch(movimento.key){
+            case 'ArrowLeft':
+                topo.style.left = parseInt(topo.style.left) - moveby + 'px';
+                break;
+            case 'ArrowRight':
+                topo.style.left = parseInt(topo.style.left) + moveby + 'px';
+                break;
+            case 'ArrowUp':
+                topo.style.top = parseInt(topo.style.top) - moveby + 'px';
+                break;
+            case 'ArrowDown':
+                topo.style.top = parseInt(topo.style.top) + moveby + 'px';
+                break;
+        }
+    })
+    })
+        
+
+});    
 
 
-    const topo = $('.mouse');
 
 
-});
+
+
+
 
