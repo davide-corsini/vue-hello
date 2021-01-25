@@ -19,23 +19,26 @@ let move = new Vue({
     }
 })
 
-$(document).ready(function(){
+
 
     let topo = document.querySelector('.mouse');
     console.log(topo);
     const movimento = 10; //questo 10rappresenta i miei px
+    console.log(movimento);
     
+
+    //*Questo me lo legge e funziona
     //fase di partenza
     window.addEventListener('load', () => {
         topo.style.position = 'absolute';
-        topo.style.right = 10;//qui é da dove parte il toporagno asse delle x
-        topo.style.bottom = 30;//qui stessa cosa ma in altezza sse delle y
+        topo.style.right = 10+'px';//qui é da dove parte il toporagno asse delle x
+        topo.style.bottom = 30 + 'px';//qui stessa cosa ma in altezza sse delle y
     });
+
+
     //qui gli dico che al click del bottone puoi muovere le frecce ma non va 
-    document.getElementById('mioBottone').click(function(){
-        const bottone = $('#mioBottone');
-        bottone.addClass('none');
-    addEventListener('keydown', (speed) => {
+   
+    window.addEventListener('keyup', (speed) => {
         switch(speed.key){
             case 'ArrowLeft':
                 topo.style.left = parseInt(topo.style.left) - movimento + 'px';
@@ -51,10 +54,6 @@ $(document).ready(function(){
                 break;
         }
     })
-    })
-        
-
-});    
 
 
 
