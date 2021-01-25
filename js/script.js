@@ -23,7 +23,7 @@ $(document).ready(function(){
 
     let topo = document.querySelector('.mouse');
     console.log(topo);
-    let movimento = 10; //questo 10rappresenta i miei px
+    const movimento = 10; //questo 10rappresenta i miei px
     
     //fase di partenza
     window.addEventListener('load', () => {
@@ -35,19 +35,19 @@ $(document).ready(function(){
     document.getElementById('mioBottone').click(function(){
         const bottone = $('#mioBottone');
         bottone.addClass('none');
-    addEventListener('keydown', (movimento) => {
-        switch(movimento.key){
+    addEventListener('keydown', (speed) => {
+        switch(speed.key){
             case 'ArrowLeft':
-                topo.style.left = parseInt(topo.style.left) - moveby + 'px';
+                topo.style.left = parseInt(topo.style.left) - movimento + 'px';
                 break;
             case 'ArrowRight':
-                topo.style.left = parseInt(topo.style.left) + moveby + 'px';
+                topo.style.left = parseInt(topo.style.left) + movimento + 'px';
                 break;
             case 'ArrowUp':
-                topo.style.top = parseInt(topo.style.top) - moveby + 'px';
+                topo.style.top = parseInt(topo.style.top) - movimento + 'px';
                 break;
             case 'ArrowDown':
-                topo.style.top = parseInt(topo.style.top) + moveby + 'px';
+                topo.style.top = parseInt(topo.style.top) + movimento + 'px';
                 break;
         }
     })
