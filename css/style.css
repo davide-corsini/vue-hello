@@ -15,12 +15,12 @@ body{
 }
 
 .prova{
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     position: absolute;
-    top: 150px;
-    left: 40px;
+    right: 10%;
+    top: 35%;
 }
 
 .container-animazione{
@@ -202,15 +202,15 @@ i{
 }
 
 .cacciatore{
-    width: 120px;
-    height: 120px; 
+    width: 300px;
+    height: 300px; 
     border-radius: 50%;   
     background-image: url('https://i0.wp.com/metropolitanmagazine.it/wp-content/uploads/2020/06/looney-tunes-sam.gif');
     background-position: center;
     background-size: cover;
     position: absolute;
-    top: 150px;
-    left: 200px;
+    top: 30%;
+    left: 10%;
 } 
 
 .none{
@@ -229,4 +229,73 @@ i{
     left: 50%;
     transform: translateX(-50%);
     border: 2px solid white;
+}
+
+.colore1{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,92,9,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.colore2{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(26,121,9,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+.colore3{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,99,102,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.colore4{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,204,31,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.colore5{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,55,82,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.colore6{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,99,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.colore7{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(107,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#tema{
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right:  100px;
+    width: 300px;
+    height: 50px;
+    padding: 2%;
+    box-shadow: 2px 0px 4px 5px rgba(0, 0, 0, 0.335); 
+}
+
+#game{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    padding: 2%;
+    width: 250px;
+    height: 80px;
+}
+
+
+.buco-nero{
+    width: 300px;
+    height: 150px;
+    background: #150804;    
+    position: absolute;
+    top: 11%;
+    left: -5%;
+    z-index: 5;
+    /* border: 1px solid white; */
 }

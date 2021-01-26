@@ -14,7 +14,7 @@
 <body>
     
     <div id="container">
-        <button id="mioBottone">Inizia game</button>
+        <button @click="getColor" id='tema'>Cambia tema</button>
         <div v-if='quadrato' class="quadrato">
             <div class="up">
                 <i class="fas fa-arrow-up"></i>
@@ -31,26 +31,28 @@
         </div>
         <h1 style="color: white" v-if='message'>Premi le frecce della tastiera per spostare Jerry</h1>
         <h3 v-else></h3>
-        <button @click='addText'>Sei pronto a giocare?</button>
+        <button id='game' @click='addText'>Sei pronto a giocare? CLICCA QUI</button>
         <img :src="src" :class="titolo" alt="">
         <button @click='addImg'>Clicca qui appena sei arrivato al traguardo!</button>
 
         <div class="container-game">
-            <div class="tubo1"></div>
-            <div class="circle"></div>
-            <div class="tubo3"></div>
-            <div class="circle2"></div>
-            <div class="tubo4"></div>
-            <div class="circle4"></div>
-            <div class="tubo5"></div>
-            <div class="circle5"></div>
-            <div class="tubo6"></div>
-            <div class="arrivo"></div>
+            <div :class="colori[numberColor] +  ' ' + 'tubo1'"></div>
+            <div :class="colori[numberColor] +  ' ' + 'circle'"></div>
+            <div :class="colori[numberColor] +  ' ' + 'tubo3'"></div>
+            <div :class="colori[numberColor] +  ' ' + 'circle2'"></div>
+            <div :class="colori[numberColor] + ' ' + 'tubo4'"></div>
+            <div :class="colori[numberColor] + ' ' + 'circle4'"></div>
+            <div :class="colori[numberColor] + ' ' + 'tubo5'"></div>
+            <div :class="colori[numberColor] + ' ' + 'circle5'"></div>
+            <div :class="colori[numberColor] + ' ' + 'tubo6'"></div>
             <div id='topo' class='mouse partenza'></div>
-            <div id='caccia' class="cacciatore"></div>        
+            <div v-if='quadrato' id='caccia' class="cacciatore"></div>        
+            <div class="buco-nero"></div>
         </div>
-            
+
+
     </div>
+
 
     <script src="js/script.js"></script>
 </body>
